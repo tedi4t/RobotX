@@ -1,0 +1,36 @@
+$home-bg-color: rgba(242, 0, 0, .55);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  height: 700px;
+  background: url('../img/home-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $home-bg-color;
+  }
+}
+
+.carousel {
+  .carousel-inner {
+    
+  }
+  
+  .carousel-indicators {
+    margin: 0;
+  }
+}

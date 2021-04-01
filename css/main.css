@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  height: 700px;
+  background: url("../img/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+#home .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(242, 0, 0, 0.55);
+}
+
+.carousel .carousel-indicators {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

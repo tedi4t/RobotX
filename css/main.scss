@@ -1,4 +1,10 @@
+@import './containers.scss';
+@import './colors.scss';
+@import './fields.scss';
+
 $home-bg-color: rgba(242, 0, 0, .55);
+$black: rgb(0, 0, 0);
+
 
 html, body {
   height: 100%;
@@ -27,7 +33,7 @@ body {
 
 .carousel {
   .carousel-inner {
-    
+
   }
   
   .carousel-indicators {

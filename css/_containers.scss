@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+$breakpoint-max: (
+  576: 540,
+  768: 720,
+  992: 960,
+  1200: 1140,
+  1400: 1320
+);
+
+@each $breakpoint, $max-width in $breakpoint-max {
+  @media screen and (min-width: #{$breakpoint}px) {
+    .container {
+      width: #{$max-width}px
+    }
+  }
+}

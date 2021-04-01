@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: flex;
+}
+
+.d-none {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+$row-parts: (
+  0: 0%,
+  1: 8.3333333%,
+  2: 16.666666%,
+  3: 25%,
+  4: 33.333333%,
+  5: 41.666666%,
+  6: 50%,
+  7: 58.333333%,
+  8: 66.666666%,
+  9: 75%,
+  10: 83.33333%,
+  11: 91.66666%,
+  12: 100%
+);
+
+$breakpoint-max: (
+  'xs': 0,
+  'sm': 576,
+  'md': 768,
+  'lg': 992,
+  'xl': 1200,
+  'xxl': 1400
+);
+
+@each $col-number, $col-percentage in $row-parts {
+  @each $breakpoint, $max-width in $breakpoint-max {
+    @media screen and (min-width: #{$max-width}px) {
+      .col-#{$breakpoint}-#{$col-number} {
+        flex: 0 0 #{$col-percentage};
+        max-width: #{$col-percentage};
+      }
+    }
+  }
+}

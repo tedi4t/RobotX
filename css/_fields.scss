@@ -23,4 +23,20 @@ $spacings: (
   .mr-#{$index}, .mr-#{$index}, .m-#{$index} {
     margin-right: #{$spacing}rem;
   }
+
+  .pb-#{$index}, .pb-#{$index}, .p-#{$index} {
+    margin-bottom: #{$spacing}rem;
+  }
+
+  .pt-#{$index}, .pt-#{$index}, .p-#{$index} {
+    padding-top: #{$spacing}rem;
+  }
+
+  .pl-#{$index}, .pl-#{$index}, .p-#{$index} {
+    padding-left: #{$spacing}rem;
+  }
+
+  .pr-#{$index}, .pr-#{$index}, .p-#{$index} {
+    padding-right: #{$spacing}rem;
+  }
 }

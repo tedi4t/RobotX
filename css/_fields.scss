@@ -25,7 +25,7 @@ $spacings: (
   }
 
   .pb-#{$index}, .py-#{$index}, .p-#{$index} {
-    margin-bottom: #{$spacing}rem;
+    padding-bottom: #{$spacing}rem;
   }
 
   .pt-#{$index}, .py-#{$index}, .p-#{$index} {

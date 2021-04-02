@@ -1,0 +1,185 @@
+#team {
+    background: url('../img/team-bg.jpg') no-repeat center;
+    background-size: cover;
+    color: $white;
+  
+    .team-card {
+      padding-right: 50px;
+  
+      .team-text {
+        font-size: 1.2rem;
+      }
+  
+      .social-medias {
+        position: relative;
+        height: 60px;
+        overflow-y: hidden;
+        
+        .rect {
+          width: 100%;
+          height: 7px;
+        }
+  
+        .rect-top {
+          width: 100%;
+          height: 7px;
+          position: relative;
+          margin-bottom: 15px;
+        }
+  
+        .rect-top::after {
+          content: ''; 
+          position: absolute; /* Абсолютное позиционирование */
+          left: 50%;
+          top: 100%;
+          transform: translateX(-50%);
+          border: 10px solid transparent; /* Прозрачные границы */
+          border-top: 10px solid $red; /* Добавляем треугольник */
+        }
+  
+        .rect-top.bg-red {
+          background: $red;
+        }
+  
+        .rect-top {
+          position: absolute;
+          top: 0;
+          animation-duration: 1s;
+          animation-timing-function: ease;
+          animation-name: top-animation-revert;
+          transform: translateY(0);
+        }
+  
+        .social-media-list {
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          text-align: center;
+          transform: translateY(50px);
+          transition-duration: 1s;
+  
+          i {
+            padding: 0 7px;
+            color: $red;
+            transition-duration: .5s;
+          }
+  
+          a:hover {
+            i {
+              color: $white;
+            }
+          }
+        }
+  
+        .rect-bottom {
+          position: absolute;
+          bottom: 0;
+          animation-duration: 1s;
+          animation-timing-function: ease;
+          animation-name: bottom-animation-revert;
+          transform: translateY(50px);      
+        }
+      }
+    }
+  
+    .team-card:hover {
+      .rect-bottom {
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-name: bottom-animation;
+        transform: translateY(0);
+      }
+  
+      .social-media-list {
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-name: bottom-animation;
+        transform: translateY(0);
+      }
+  
+      .rect-top {
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-name: top-animation;
+        transform: translateY(-30px);
+      }
+    }
+  
+    .skill-progress-bar {
+      background: $red;
+      width: 100%;
+      border-radius: 3px;
+      height: 12px;
+      align-self: center;
+  
+      .progress {
+        border-radius: 3px 0px 0px 3px;
+        height: 100%;
+        background: $white;
+      }
+    }
+  }
+  
+  @keyframes bottom-animation {
+    0% {
+      transform: translateY(50px);
+    }
+    
+    70% {
+      transform: translateY(-2px);
+    }
+  
+    80% {
+      transform: translateY(2px);
+    }
+  
+    90% {
+      transform: translateY(-2px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes bottom-animation-revert {
+    0% {
+      transform: translateY(0px);
+    }
+    
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  
+  @keyframes top-animation {
+    0% {
+      transform: translateY(0px);
+    }
+    
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes top-animation-revert {
+    0% {
+      transform: translateY(-30px);
+    }
+    
+    70% {
+      transform: translateY(2px);
+    }
+  
+    80% {
+      transform: translateY(-2px);
+    }
+  
+    90% {
+      transform: translateY(2px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }

@@ -4,6 +4,7 @@
 @import './grid';
 @import './service.scss';
 @import './team.scss';
+@import './gallery.scss';
 
 $home-bg-color: rgba(242, 0, 0, .55);
 $black: rgb(0, 0, 0);
@@ -81,4 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-weight-bold {
   font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
 }

@@ -1,0 +1,36 @@
+#gallery {
+  #gallery-header {
+    background: $black;
+    color: $white;
+
+    .gallery-header-text {
+      font-size: .9rem;
+      line-height: 1.6rem;
+    }
+
+    .gallery-filters {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+      .gallery-filter-item {
+        border: 1px solid $red;
+        padding: 20px 5px;
+        margin: 0 10px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .85rem;
+        transition-duration: .3s;
+        cursor: pointer;
+      }
+
+      .gallery-filter-item:hover {
+        background: $red;
+        color: $white;
+      }
+    }
+  }
+}

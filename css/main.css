@@ -1027,42 +1027,8 @@
   }
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-}
-
-#home {
-  height: 700px;
-  background: url("../img/home-bg.jpg") no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-
-#home .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(242, 0, 0, 0.55);
-}
-
-.carousel .carousel-indicators {
-  margin: 0;
-}
-
 #service {
-  background: black;
+  background: #000;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -1385,6 +1351,82 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#gallery #gallery-header {
+  background: #000;
+  color: #fff;
+}
+
+#gallery #gallery-header .gallery-header-text {
+  font-size: .9rem;
+  line-height: 1.6rem;
+}
+
+#gallery #gallery-header .gallery-filters {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#gallery #gallery-header .gallery-filters .gallery-filter-item {
+  border: 1px solid #f20101;
+  padding: 20px 5px;
+  margin: 0 10px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .85rem;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  cursor: pointer;
+}
+
+#gallery #gallery-header .gallery-filters .gallery-filter-item:hover {
+  background: #f20101;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+#home {
+  height: 700px;
+  background: url("../img/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+#home .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(242, 0, 0, 0.55);
+}
+
+.carousel .carousel-indicators {
+  margin: 0;
+}
+
 .title {
   text-transform: uppercase;
   text-align: center;
@@ -1417,5 +1459,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-weight-bold {
   font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

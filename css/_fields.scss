@@ -12,31 +12,31 @@ $spacings: (
     margin-bottom: #{$spacing}rem;
   }
 
-  .mt-#{$index}, .mt-#{$index}, .m-#{$index} {
+  .mt-#{$index}, .my-#{$index}, .m-#{$index} {
     margin-top: #{$spacing}rem;
   }
 
-  .ml-#{$index}, .ml-#{$index}, .m-#{$index} {
+  .ml-#{$index}, .mx-#{$index}, .m-#{$index} {
     margin-left: #{$spacing}rem;
   }
 
-  .mr-#{$index}, .mr-#{$index}, .m-#{$index} {
+  .mr-#{$index}, .mx-#{$index}, .m-#{$index} {
     margin-right: #{$spacing}rem;
   }
 
-  .pb-#{$index}, .pb-#{$index}, .p-#{$index} {
+  .pb-#{$index}, .py-#{$index}, .p-#{$index} {
     margin-bottom: #{$spacing}rem;
   }
 
-  .pt-#{$index}, .pt-#{$index}, .p-#{$index} {
+  .pt-#{$index}, .py-#{$index}, .p-#{$index} {
     padding-top: #{$spacing}rem;
   }
 
-  .pl-#{$index}, .pl-#{$index}, .p-#{$index} {
+  .pl-#{$index}, .px-#{$index}, .p-#{$index} {
     padding-left: #{$spacing}rem;
   }
 
-  .pr-#{$index}, .pr-#{$index}, .p-#{$index} {
+  .pr-#{$index}, .px-#{$index}, .p-#{$index} {
     padding-right: #{$spacing}rem;
   }
 }

@@ -5,7 +5,7 @@
 
 $home-bg-color: rgba(242, 0, 0, .55);
 $black: rgb(0, 0, 0);
-
+$red: #f20101;
 
 html, body {
   height: 100%;
@@ -14,6 +14,12 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
 
 #home {
@@ -40,4 +46,69 @@ body {
   .carousel-indicators {
     margin: 0;
   }
+}
+
+#service {
+  background: $black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .service-card {
+    text-align: center;
+    color: $white;
+    border: 2px solid $red;
+    transition-duration: 1s;
+    padding: 20px;
+    margin: 0 15px;
+
+    .service-text {
+      font-size: .9rem;
+      line-height: 1.6rem;
+    }
+
+    .service-btn {
+      padding: 10px 12px;
+      text-transform: uppercase;
+      font-weight: 800;
+      background: $red;
+      color: $white;
+      transition-duration: .5s;
+      border: 0;
+    }
+
+    .service-btn:hover {
+      background: $white;
+      color: $red;
+    }
+  }
+
+  .service-card:hover {
+    border-color: $white;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.fa-bg-red {
+  color: $red;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-weight-ligth {
+  font-weight: 300;
+}
+
+.font-weight-normal {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
 }

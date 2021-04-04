@@ -1027,6 +1027,96 @@
   }
 }
 
+#home #carousel {
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#home #carousel #viewport {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  content: "";
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#home #carousel #viewport #slidewrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#home #carousel #viewport #slidewrapper .slide {
+  width: 33.3333333333%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  height: 100%;
+  float: left;
+  z-index: 1000;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home #carousel #viewport #slidewrapper .slide h1, #home #carousel #viewport #slidewrapper .slide h3 {
+  margin: 0;
+}
+
+#home #carousel #viewport #slidewrapper .slide .slider-content {
+  text-align: center;
+  color: #fff;
+}
+
+#home #carousel #viewport #slidewrapper .slide .slider-content h1 {
+  font-size: 6.5rem;
+}
+
+#home #carousel #viewport #slidewrapper .slide .slider-content h1 .x-letter {
+  color: #f20101;
+}
+
+#home #carousel #viewport #slidewrapper .slide .slider-content h3 {
+  font-size: 1.6rem;
+}
+
+#home #carousel #viewport #carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style-type: none;
+}
+
+#home #carousel #viewport #carousel-indicators .carousel-indicator {
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#home #carousel #viewport #carousel-indicators .carousel-indicator.active {
+  background: #000;
+}
+
 #service {
   background: #000;
   padding-top: 3rem;
@@ -1801,10 +1891,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   background: rgba(242, 0, 0, 0.55);
-}
-
-.carousel .carousel-indicators {
-  margin: 0;
 }
 
 .title {

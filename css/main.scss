@@ -1,7 +1,8 @@
 @import './containers.scss';
 @import './colors.scss';
 @import './fields.scss';
-@import './grid';
+@import './grid.scss';
+@import './carousel.scss';
 @import './service.scss';
 @import './team.scss';
 @import './gallery.scss';
@@ -45,15 +46,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.carousel {
-  .carousel-inner {
+// .carousel {
+//   .carousel-inner {
 
-  }
+//   }
   
-  .carousel-indicators {
-    margin: 0;
-  }
-}
+//   .carousel-indicators {
+//     margin: 0;
+//   }
+// }
 
 .title {
   text-transform: uppercase;

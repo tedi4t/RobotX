@@ -1468,6 +1468,75 @@
           transform: translateY(0);
 }
 
+section#price {
+  background: #000;
+}
+
+section#price .price-card {
+  margin: 0 25px 0 0;
+  background: #fff;
+  text-align: center;
+}
+
+section#price .price-card .card-top {
+  background: #f20101;
+  color: white;
+  padding: 1px 10px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+section#price .price-card .card-top .price {
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 0px;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+section#price .price-card .card-top .price sup {
+  font-size: 1.1rem;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -2rem;
+}
+
+section#price .price-card .card-top .price sub {
+  font-size: 1.1rem;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  bottom: -0.25rem;
+}
+
+section#price .price-card .card-bottom {
+  background: #fff;
+  color: #000;
+  padding: 0px 20px 25px 20px;
+}
+
+section#price .price-card .card-bottom p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: .9rem;
+}
+
+section#price .price-card .card-bottom button.btn-price {
+  background: #000;
+  color: #fff;
+  font-weight: 800;
+  width: 100%;
+  padding: 15px 0px;
+  text-transform: uppercase;
+  border-width: 0;
+  font-size: 1rem;
+}
+
+section#price .price-card:hover .card-top {
+  background: #333;
+}
+
 html, body {
   height: 100%;
 }

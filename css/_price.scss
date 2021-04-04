@@ -1,0 +1,73 @@
+$price-top-hover-color: #333;
+
+section#price {
+  background: $black;
+
+  .price-card {
+    margin: 0 25px 0 0;
+    background: $white;
+    text-align: center;
+
+    .card-top {
+      background: $red;
+      color: white;
+      padding: 1px 10px;
+      transition-duration: .5s;
+
+      .price {
+        font-weight: 800;
+        font-size: 4rem;
+        letter-spacing: 0px;
+        margin-top: 1rem;
+        margin-bottom: 1.3rem;
+
+        sup {
+          font-size: 1.1rem;
+          line-height: 0;
+          vertical-align: baseline;
+          position: relative;
+          top: -2rem;
+        }
+
+        sub {
+          font-size: 1.1rem;
+          line-height: 0;
+          vertical-align: baseline;
+          position: relative;
+          bottom: -0.25rem;
+        }
+      }
+    }
+
+    .card-bottom {
+      background: $white;
+      color: $black;
+      padding: 0px 20px 25px 20px;
+
+      p {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: .9rem;
+      }
+
+      button.btn-price {
+        background: $black;
+        color: $white;
+        font-weight: 800;
+        width: 100%;
+        padding: 15px 0px;
+        text-transform: uppercase;
+        border-width: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .price-card:hover {
+
+
+    .card-top {
+      background: $price-top-hover-color;
+    }
+  }
+}

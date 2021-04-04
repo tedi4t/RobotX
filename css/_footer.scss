@@ -1,0 +1,43 @@
+$x-letter-color: #333;
+
+footer {
+  background: $red;
+  color: $white;
+
+  .footer-name {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 10px 0;
+
+    .x-letter {
+      font-weight: 800;
+      color: $x-letter-color;
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  .footer-icons {
+    height: 100%;
+    text-align: center;
+    margin: auto 0;
+    display: grid;
+    align-items: center;
+
+    i {
+      margin: 0 4px;
+      transition-duration: .2s;
+    }
+
+    i:hover {
+      color: $x-letter-color;
+      cursor: pointer;
+    }
+  }
+}

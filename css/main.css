@@ -1693,7 +1693,7 @@ section#contact {
 
 section#contact .input-area {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px 0 0;
   position: relative;
 }
 
@@ -1712,7 +1712,6 @@ section#contact button.contact-btn {
   color: #fff;
   padding: 15px 25px;
   text-transform: uppercase;
-  margin-left: 10px;
   border-width: 0;
   font-size: 1rem;
   -webkit-transition-duration: .5s;
@@ -1723,6 +1722,55 @@ section#contact button.contact-btn:hover {
   cursor: pointer;
   background: #fff;
   color: #f20101;
+}
+
+footer {
+  background: #f20101;
+  color: #fff;
+}
+
+footer .footer-name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+footer .footer-name .x-letter {
+  font-weight: 800;
+  color: #333;
+}
+
+footer .footer-text {
+  text-align: center;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-icons {
+  height: 100%;
+  text-align: center;
+  margin: auto 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-icons i {
+  margin: 0 4px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+footer .footer-icons i:hover {
+  color: #333;
+  cursor: pointer;
 }
 
 html, body {

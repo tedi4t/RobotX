@@ -59,6 +59,12 @@ section#price {
         text-transform: uppercase;
         border-width: 0;
         font-size: 1rem;
+        transition-duration: .5s;
+      }
+
+      button.btn-price:hover {
+        background: $red;
+        cursor: pointer;
       }
     }
   }

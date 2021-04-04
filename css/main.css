@@ -1531,6 +1531,13 @@ section#price .price-card .card-bottom button.btn-price {
   text-transform: uppercase;
   border-width: 0;
   font-size: 1rem;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+section#price .price-card .card-bottom button.btn-price:hover {
+  background: #f20101;
+  cursor: pointer;
 }
 
 section#price .price-card:hover .card-top {

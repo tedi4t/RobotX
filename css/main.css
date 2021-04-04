@@ -299,8 +299,8 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .d-flex {
@@ -1679,6 +1679,50 @@ section#news #news-block #news-right .news-list .news .content .views i, section
 
 section#news #news-block #news-right .news-list .news .content h5, section#news #news-block #news-right .news-list .news .content p, section#news #news-block #news-right .news-list .news .content .views, section#news #news-block #news-right .news-list .news .content .comments {
   margin-left: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#contact {
+  background: #000;
+  color: #fff;
+}
+
+section#contact .input-area {
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+}
+
+section#contact .input-area label {
+  font-size: 1.5rem;
+}
+
+section#contact .input-area input, section#contact .input-area textarea {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+section#contact button.contact-btn {
+  background: #f20101;
+  color: #fff;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  border-width: 0;
+  font-size: 1rem;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+section#contact button.contact-btn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #f20101;
 }
 
 html, body {

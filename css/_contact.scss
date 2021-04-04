@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+section#contact {
+  background: $black;
+  color: $white;
+  
+  .input-area {
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+
+    label {
+      font-size: 1.5rem;
+    }
+
+    input, textarea {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  button.contact-btn {
+    background: $red;
+    color: $white;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border-width: 0;
+    font-size: 1rem;
+    transition-duration: .5s;
+  }
+
+  button.contact-btn:hover {
+    cursor: pointer;
+    background: $white;
+    color: $red;
+  }
+}

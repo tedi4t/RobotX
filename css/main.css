@@ -1544,6 +1544,143 @@ section#price .price-card:hover .card-top {
   background: #333;
 }
 
+section#news {
+  background: url("../img/home-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+section#news #news-block {
+  position: relative;
+  color: white;
+}
+
+section#news #news-block #news-left {
+  background: rgba(1, 1, 1, 0.65);
+  padding: 20px 35px;
+}
+
+section#news #news-block #news-left .news-list .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+}
+
+section#news #news-block #news-left .news-list .news .date {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  max-width: 20%;
+}
+
+section#news #news-block #news-left .news-list .news .date .date-content {
+  background: #f20101;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 100%;
+  max-width: 90px;
+}
+
+section#news #news-block #news-left .news-list .news .content {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  max-width: 80%;
+}
+
+section#news #news-block #news-left .news-list .news .content h5 {
+  margin: 0;
+}
+
+section#news #news-block #news-left .news-list .news .content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section#news #news-block #news-left .news-list .news .content .views, section#news #news-block #news-left .news-list .news .content .comments {
+  display: inline-block;
+}
+
+section#news #news-block #news-left .news-list .news .content .views i, section#news #news-block #news-left .news-list .news .content .comments i {
+  color: #f20101;
+}
+
+section#news #news-block #news-right {
+  background: rgba(255, 0, 0, 0.8);
+  padding: 0px 20px;
+  height: 100%;
+}
+
+section#news #news-block #news-right .news-list {
+  padding: 35px 0;
+}
+
+section#news #news-block #news-right .news-list .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+section#news #news-block #news-right .news-list .news .date {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  max-width: 20%;
+  overflow-x: hidden;
+}
+
+section#news #news-block #news-right .news-list .news .date .date-content {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  max-width: 90px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding-left: 10px;
+  margin-right: 20px;
+  padding: 6px 8px;
+}
+
+section#news #news-block #news-right .news-list .news .content {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  max-width: 80%;
+}
+
+section#news #news-block #news-right .news-list .news .content h5 {
+  margin: 0;
+  font-weight: 800;
+}
+
+section#news #news-block #news-right .news-list .news .content p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+section#news #news-block #news-right .news-list .news .content .views, section#news #news-block #news-right .news-list .news .content .comments {
+  display: inline-block;
+}
+
+section#news #news-block #news-right .news-list .news .content .views i, section#news #news-block #news-right .news-list .news .content .comments i {
+  color: #000;
+}
+
+section#news #news-block #news-right .news-list .news .content h5, section#news #news-block #news-right .news-list .news .content p, section#news #news-block #news-right .news-list .news .content .views, section#news #news-block #news-right .news-list .news .content .comments {
+  margin-left: 10px;
+}
+
 html, body {
   height: 100%;
 }
@@ -1614,5 +1751,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-center {
   text-align: center;
+}
+
+.h-100 {
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

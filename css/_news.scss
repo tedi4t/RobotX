@@ -1,0 +1,129 @@
+$news-left-bg: rgba(1, 1, 1, 0.65);
+$news-right-bg: rgba(256, 0, 0, 0.8);
+
+section#news {
+  background: url('../img/home-bg.jpg') no-repeat center;
+	background-size: cover;
+
+	#news-block {
+		position: relative;
+		color: white;
+
+		#news-left {
+			background: $news-left-bg;
+			padding: 20px 35px;
+
+			.news-list {
+
+
+				.news {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: row;
+					margin-bottom: 30px;
+
+					.date {
+						flex-basis: 20%;
+						max-width: 20%;
+
+						.date-content {
+							background: $red;
+							padding: 5px 10px;
+							margin-right: 10px;
+							font-size: 2.5rem;
+							font-weight: 800;
+							width: 100%;
+							max-width: 90px;
+							
+						}
+					}
+
+					.content {
+						flex-basis: 80%;
+						max-width: 80%;
+
+						h5 {
+							margin: 0;
+						}
+
+						p {
+							margin-top: 10px;
+							margin-bottom: 10px;
+						}
+
+						.views, .comments {
+							display: inline-block;
+
+							i {
+								color: $red;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#news-right {
+			background: $news-right-bg;
+			padding: 0px 20px;
+			height: 100%;
+
+			.news-list {
+				padding: 35px 0;
+
+
+				.news {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: row;
+					margin-bottom: 10px;
+
+					.date {
+						flex-basis: 20%;
+						max-width: 20%;
+						overflow-x: hidden;
+
+						.date-content {
+							background: $black;
+							color: $white;
+							width: 100%;
+							max-width: 90px;
+							font-size: 1.6rem;
+							font-weight: 800;
+							padding-left: 10px;
+							margin-right: 20px;
+							padding: 6px 8px;
+						}
+					}
+
+					.content {
+						flex-basis: 80%;
+						max-width: 80%;
+
+						h5 {
+							margin: 0;
+							font-weight: 800;
+						}
+
+						p {
+							margin: 0;
+							font-size: .8rem;
+						}
+
+						.views, .comments {
+							display: inline-block;
+
+							i {
+								color: $black;
+							}
+						}
+
+						h5, p, .views, .comments {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

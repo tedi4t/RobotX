@@ -56,6 +56,16 @@
           h3 {
             font-size: 1.6rem;
           }
+
+          @media screen and (max-width: 768px) {
+            h1 {
+              font-size: 5rem;
+            }
+
+            h3 {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -63,8 +73,11 @@
     #carousel-indicators {
       position: absolute;
       bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      // left: 50%;
+      padding-left: 0;
+      // transform: translateX(-50%);
       list-style-type: none;
 
       .carousel-indicator {
@@ -73,6 +86,16 @@
         height: 10px;
         background: $white;
         border: 1px solid $black;
+      }
+
+      @media screen and (max-width: 768px) {
+        .carousel-indicator {
+          display: inline-block;
+          width: 50px;
+          height: 10px;
+          background: $white;
+          border: 1px solid $black;
+        }
       }
 
       .carousel-indicator.active {

@@ -5,6 +5,14 @@
   
     .team-card {
       padding-right: 50px;
+
+      @media screen and (max-width: 992px) {
+        padding: 0 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
   
       .team-text {
         font-size: 1.2rem;

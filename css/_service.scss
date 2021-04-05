@@ -35,4 +35,10 @@
     .service-card:hover {
       border-color: $white;
     }
+
+    @media screen and (max-width: 992px) {
+      .service-card {
+        margin-top: 30px;
+      }
+    }
   }

@@ -13,7 +13,7 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
     .gallery-filters {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
       .gallery-filter-item {
         border: 1px solid $red;
@@ -29,6 +29,14 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
         cursor: pointer;
       }
 
+      @media screen and (max-width: 768px) {
+        .gallery-filter-item {
+          padding: 10px 20px;
+          font-size: .75rem;
+          margin-top: 10px;
+        }
+      }
+
       .gallery-filter-item:hover {
         background: $red;
         color: $white;
@@ -39,6 +47,14 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
   #gallery-items {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .gallery-item {
       position: relative;

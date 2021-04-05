@@ -1,6 +1,10 @@
 $news-left-bg: rgba(1, 1, 1, 0.65);
 $news-right-bg: rgba(256, 0, 0, 0.8);
 
+* {
+	box-sizing: border-box;
+}
+
 section#news {
   background: url('../img/home-bg.jpg') no-repeat center;
 	background-size: cover;
@@ -35,6 +39,17 @@ section#news {
 							width: 100%;
 							max-width: 90px;
 							
+							@media screen and (max-width: 576px) {
+								font-size: 1.1rem;
+							}
+
+							@media screen and (max-width: 768px) {
+								font-size: 1.5rem;
+							}
+
+							@media screen and (max-width: 992px) {
+								font-size: 2rem;
+							}
 						}
 					}
 
@@ -93,6 +108,18 @@ section#news {
 							padding-left: 10px;
 							margin-right: 20px;
 							padding: 6px 8px;
+
+							@media screen and (max-width: 576px) {
+								font-size: 1.1rem;
+							}
+
+							@media screen and (max-width: 768px) {
+								font-size: 1.2rem;
+							}
+
+							@media screen and (max-width: 992px) {
+								font-size: 1.4rem;
+							}
 						}
 					}
 

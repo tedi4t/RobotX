@@ -4,6 +4,10 @@ footer {
   background: $red;
   color: $white;
 
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
   .footer-name {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -29,6 +33,10 @@ footer {
     margin: auto 0;
     display: grid;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
 
     i {
       margin: 0 4px;

@@ -8,6 +8,11 @@ section#price {
     background: $white;
     text-align: center;
 
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+      margin-right: 0;
+    }
+
     .card-top {
       background: $red;
       color: white;

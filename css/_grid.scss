@@ -46,12 +46,14 @@ $breakpoint-max: (
   'xxl': 1400
 );
 
-@each $col-number, $col-percentage in $row-parts {
-  @each $breakpoint, $max-width in $breakpoint-max {
+@each $breakpoint, $max-width in $breakpoint-max {
+  @each $col-number, $col-percentage in $row-parts{
     @media screen and (min-width: #{$max-width}px) {
       .col-#{$breakpoint}-#{$col-number} {
         flex: 0 0 #{$col-percentage};
         max-width: #{$col-percentage};
+        position: relative;
+        width: 100%;
       }
     }
   }

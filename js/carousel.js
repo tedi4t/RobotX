@@ -32,4 +32,4 @@ function nextSlide() {
 //   $('#slidewrapper').prepend($(slides[prevID]).attr('id', 'prev').css('margin-left', `-${third}%`));
 // }
 
-// setInterval(nextSlide, 10000);
+setInterval(nextSlide, 10000);

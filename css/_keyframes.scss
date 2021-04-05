@@ -1,8 +1,17 @@
-.animate-slice-up {
+.animate-slice-up,
+.animate-scale-down-double,
+.animate-scale-up-once,
+.animate-shake-horizontal,
+.animate-slice-left,
+.animate-slice-right,
+.animate-shake-down {
   animation-duration: .8s;
-  animation-name: animate-slice-up;
   animation-timing-function: ease;
 }
+
+// .animate-slice-up {
+//   animation-name: animate-slice-up;
+// }
 
 @keyframes animate-slice-up {
   0% {
@@ -22,11 +31,9 @@
   }
 }
 
-.animate-scale-down-double {
-  animation-duration: .8s;
-  animation-timing-function: ease;
-  animation-name: animate-scale-down-double;
-}
+// .animate-scale-down-double {
+//   animation-name: animate-scale-down-double;
+// }
 
 @keyframes animate-scale-down-double {
   0% {
@@ -50,11 +57,9 @@
   }
 }
 
-.animate-scale-up-once {
-  animation-duration: .8s;
-  animation-timing-function: ease;
-  animation-name: animate-scale-up-once;
-}
+// .animate-scale-up-once {
+//   animation-name: animate-scale-up-once;
+// }
 
 @keyframes animate-scale-up-once {
   0% {
@@ -73,8 +78,7 @@
 .animate-shake-horizontal {
   animation-iteration-count: 4;
   animation-duration: .2s;
-  animation-timing-function: ease;
-  animation-name: animate-shake-horizontal;
+  // animation-name: animate-shake-horizontal;
 }
 
 @keyframes animate-shake-horizontal {
@@ -99,11 +103,9 @@
   }
 }
 
-.animate-slice-left {
-  animation-duration: .8s;
-  animation-name: animate-slice-left;
-  animation-timing-function: ease;
-}
+// .animate-slice-left {
+//   animation-name: animate-slice-left;
+// }
 
 @keyframes animate-slice-left {
   0% {
@@ -123,11 +125,9 @@
   }
 }
 
-.animate-slice-right {
-  animation-duration: .8s;
-  animation-name: animate-slice-right;
-  animation-timing-function: ease;
-}
+// .animate-slice-right {
+//   animation-name: animate-slice-right;
+// }
 
 @keyframes animate-slice-right {
   0% {
@@ -150,7 +150,7 @@
 .animate-shake-down {
   transform-origin: top center;
   animation-duration: 1s;
-  animation-name: animate-shake-down;
+  // animation-name: animate-shake-down;
 }
 
 @keyframes animate-shake-down {

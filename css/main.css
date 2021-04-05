@@ -1865,11 +1865,15 @@ footer .footer-icons i:hover {
   cursor: pointer;
 }
 
-.animate-slice-up {
+.animate-slice-up,
+.animate-scale-down-double,
+.animate-scale-up-once,
+.animate-shake-horizontal,
+.animate-slice-left,
+.animate-slice-right,
+.animate-shake-down {
   -webkit-animation-duration: .8s;
           animation-duration: .8s;
-  -webkit-animation-name: animate-slice-up;
-          animation-name: animate-slice-up;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
@@ -1910,15 +1914,6 @@ footer .footer-icons i:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-}
-
-.animate-scale-down-double {
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-name: animate-scale-down-double;
-          animation-name: animate-scale-down-double;
 }
 
 @-webkit-keyframes animate-scale-down-double {
@@ -1967,15 +1962,6 @@ footer .footer-icons i:hover {
   }
 }
 
-.animate-scale-up-once {
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-name: animate-scale-up-once;
-          animation-name: animate-scale-up-once;
-}
-
 @-webkit-keyframes animate-scale-up-once {
   0% {
     -webkit-transform: scale(1);
@@ -2011,10 +1997,6 @@ footer .footer-icons i:hover {
           animation-iteration-count: 4;
   -webkit-animation-duration: .2s;
           animation-duration: .2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-name: animate-shake-horizontal;
-          animation-name: animate-shake-horizontal;
 }
 
 @-webkit-keyframes animate-shake-horizontal {
@@ -2063,15 +2045,6 @@ footer .footer-icons i:hover {
   }
 }
 
-.animate-slice-left {
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-  -webkit-animation-name: animate-slice-left;
-          animation-name: animate-slice-left;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
 @-webkit-keyframes animate-slice-left {
   0% {
     -webkit-transform: translateX(100%);
@@ -2108,15 +2081,6 @@ footer .footer-icons i:hover {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-}
-
-.animate-slice-right {
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-  -webkit-animation-name: animate-slice-right;
-          animation-name: animate-slice-right;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
 }
 
 @-webkit-keyframes animate-slice-right {
@@ -2162,8 +2126,6 @@ footer .footer-icons i:hover {
           transform-origin: top center;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: animate-shake-down;
-          animation-name: animate-shake-down;
 }
 
 @-webkit-keyframes animate-shake-down {

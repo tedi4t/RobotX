@@ -1,0 +1,100 @@
+.animate-slice-up {
+  animation-duration: .8s;
+  animation-name: animate-slice-up;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-slice-up {
+  0% {
+    transform: translateY(100%);
+  }
+  
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(10px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scale-down-double {
+  animation-duration: .8s;
+  animation-timing-function: ease;
+  animation-name: animate-scale-down-double;
+}
+
+@keyframes animate-scale-down-double {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(.93);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(.93);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scale-up-once {
+  animation-duration: .8s;
+  animation-timing-function: ease;
+  animation-name: animate-scale-up-once;
+}
+
+@keyframes animate-scale-up-once {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-shake-horizontal {
+  animation-iteration-count: 4;
+  animation-duration: .2s;
+  animation-timing-function: ease;
+  animation-name: animate-shake-horizontal;
+}
+
+@keyframes animate-shake-horizontal {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -42,6 +42,8 @@
         .slider-content {
           text-align: center;
           color: $white;
+          overflow-y: hidden;
+          overflow-x: hidden;
           
           h1 {
             font-size: 6.5rem;

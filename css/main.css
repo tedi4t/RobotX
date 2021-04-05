@@ -1845,28 +1845,16 @@ nav.navbar .nav ul.nav-items a.nav-item.active, nav.navbar .nav ul.nav-items a.n
 }
 
 #gallery #gallery-items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-}
-
-@media screen and (max-width: 992px) {
-  #gallery #gallery-items {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #gallery #gallery-items {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
+  background: #000;
+  position: relative;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 #gallery #gallery-items .gallery-item {
-  position: relative;
+  position: absolute;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 #gallery #gallery-items .gallery-item img {

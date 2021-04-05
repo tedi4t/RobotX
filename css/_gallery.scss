@@ -45,19 +45,23 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
   }
 
   #gallery-items {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
 
-    @media screen and (max-width: 992px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @media screen and (max-width: 992px) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
-    @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    // @media screen and (max-width: 768px) {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
+    background: $black;
+    position: relative;
+    transition-duration: .5s;
 
     .gallery-item {
-      position: relative;
+      position: absolute;
+      transition-duration: .5s;
 
       img {
         width: 100%;

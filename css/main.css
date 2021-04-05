@@ -1027,6 +1027,164 @@
   }
 }
 
+nav.navbar {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  z-index: 1000;
+  color: white;
+  padding: 15px 0;
+}
+
+nav.navbar .navbar-collapse-items {
+  display: none;
+  z-index: 5;
+}
+
+nav.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  justify-items: flex-start;
+}
+
+nav.navbar .nav .nav-brand {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+nav.navbar .nav .nav-brand .x-letter {
+  font-weight: 800;
+  color: #f20101;
+}
+
+nav.navbar .nav ul.nav-items {
+  margin: 0;
+  margin-left: auto;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.navbar .nav ul.nav-items a.nav-item {
+  margin: 0;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 12px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border-bottom: 1px solid transparent;
+}
+
+nav.navbar .nav ul.nav-items a.nav-item:hover {
+  cursor: pointer;
+}
+
+nav.navbar .nav ul.nav-items a.nav-item.active, nav.navbar .nav ul.nav-items a.nav-item:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f20101;
+  border-bottom-color: #f20101;
+}
+
+@media screen and (max-width: 768px) {
+  nav.navbar {
+    padding: 5px 0;
+  }
+  nav.navbar .nav .navbar-collapse {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 46px;
+    padding: 6px 8px 8px 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    cursor: pointer;
+    position: relative;
+  }
+  nav.navbar .nav .navbar-collapse .navbar-collapse-btn, nav.navbar .nav .navbar-collapse .navbar-collapse-btn::before, nav.navbar .nav .navbar-collapse .navbar-collapse-btn::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+  nav.navbar .nav .navbar-collapse .navbar-collapse-btn {
+    margin-top: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  nav.navbar .nav .navbar-collapse .navbar-collapse-btn::before {
+    position: absolute;
+    bottom: 10px;
+  }
+  nav.navbar .nav .navbar-collapse .navbar-collapse-btn::after {
+    position: absolute;
+    top: 10px;
+  }
+  nav.navbar .nav .navbar-collapse:hover {
+    background: #333;
+  }
+  nav.navbar .nav ul.nav-items {
+    display: none;
+  }
+  nav.navbar .navbar-collapse-items {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #101010;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav.navbar .navbar-collapse-items a.nav-item {
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    padding: 5px 0;
+    margin: 3px 0;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  nav.navbar .navbar-collapse-items a.nav-item.active, nav.navbar .navbar-collapse-items a.nav-item:hover {
+    color: #f20101;
+    border-bottom-color: #f20101;
+  }
+  nav.navbar .navbar-collapse-items.unactive {
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transform: translateY(-125%);
+            transform: translateY(-125%);
+  }
+}
+
 #home #carousel {
   z-index: 1000;
   position: absolute;
@@ -2185,6 +2343,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/home-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
+  z-index: 2;
 }
 
 #home .overlay {

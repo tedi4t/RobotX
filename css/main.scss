@@ -2,6 +2,7 @@
 @import './colors.scss';
 @import './fields.scss';
 @import './grid.scss';
+@import './navbar.scss';
 @import './carousel.scss';
 @import './service.scss';
 @import './team.scss';
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url('../img/home-bg.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
+  z-index: 2;
 
   .overlay {
     position: absolute;

@@ -31,3 +31,17 @@ function activateSection() {
 
 activateSection();
 $(window).scroll(activateSection);
+
+const navHeight = $('nav.navbar').innerHeight();
+
+function scrollToSection() {
+  const href = $(this).attr('href');
+  const sectionScrollTop = $(`section${href}`).offset().top;
+  const targetOffsetTop = sectionScrollTop - navHeight + 5;
+
+  $('html').animate({
+    scrollTop: targetOffsetTop
+  }, 500);
+}
+
+$('nav.navbar a').click(scrollToSection);

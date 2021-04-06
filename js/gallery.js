@@ -69,3 +69,5 @@ for (const btnName in galleryButtons) {
     }
   })
 }
+
+$(window).resize(locateAllPhotos);

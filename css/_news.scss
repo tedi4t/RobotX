@@ -16,9 +16,22 @@ section#news {
 		#news-left {
 			background: $news-left-bg;
 			padding: 20px 35px;
+			height: 100%;
+
+      h3 {
+        margin-left: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
 
 			.news-list {
+        padding-left: 1.5rem;
 
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+        }
 
 				.news {
 					display: flex;
@@ -30,6 +43,11 @@ section#news {
 						flex-basis: 20%;
 						max-width: 20%;
 
+            @media screen and (max-width: 992px) {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
+
 						.date-content {
 							background: $red;
 							padding: 5px 10px;
@@ -38,17 +56,17 @@ section#news {
 							font-weight: 800;
 							width: 100%;
 							max-width: 90px;
-							
-							@media screen and (max-width: 576px) {
-								font-size: 1.1rem;
-							}
-
-							@media screen and (max-width: 768px) {
-								font-size: 1.5rem;
-							}
 
 							@media screen and (max-width: 992px) {
-								font-size: 2rem;
+								background: transparent;
+                color: $red;
+                margin-bottom: 5px;
+                padding: 0;
+                margin-right: 0;
+                font-size: 1.2rem;
+                font-weight: 800;
+                width: 100%;
+                max-width: none;
 							}
 						}
 					}
@@ -56,6 +74,11 @@ section#news {
 					.content {
 						flex-basis: 80%;
 						max-width: 80%;
+
+            @media screen and (max-width: 992px) {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
 
 						h5 {
 							margin: 0;
@@ -86,6 +109,9 @@ section#news {
 			.news-list {
 				padding: 35px 0;
 
+        @media screen and (max-width: 968px) {
+          padding-left: 15px;
+        }
 
 				.news {
 					display: flex;
@@ -98,6 +124,11 @@ section#news {
 						max-width: 20%;
 						overflow-x: hidden;
 
+            @media screen and (max-width: 992px) {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
+
 						.date-content {
 							background: $black;
 							color: $white;
@@ -109,16 +140,16 @@ section#news {
 							margin-right: 20px;
 							padding: 6px 8px;
 
-							@media screen and (max-width: 576px) {
-								font-size: 1.1rem;
-							}
-
-							@media screen and (max-width: 768px) {
-								font-size: 1.2rem;
-							}
-
 							@media screen and (max-width: 992px) {
-								font-size: 1.4rem;
+								background: transparent;
+                color: $black;
+                margin-bottom: 3px;
+                padding: 0;
+                margin-right: 0;
+                font-size: 1.1rem;
+                font-weight: 800;
+                width: 100%;
+                max-width: none;
 							}
 						}
 					}
@@ -126,6 +157,11 @@ section#news {
 					.content {
 						flex-basis: 80%;
 						max-width: 80%;
+
+            @media screen and (max-width: 992px) {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
 
 						h5 {
 							margin: 0;
@@ -147,6 +183,10 @@ section#news {
 
 						h5, p, .views, .comments {
 							margin-left: 10px;
+
+              @media screen and (max-width: 992px) {
+                margin-left: 0;
+              }
 						}
 					}
 				}

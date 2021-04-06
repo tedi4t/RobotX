@@ -14,6 +14,7 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
       width: 100%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      
 
       .gallery-filter-item {
         border: 1px solid $red;
@@ -27,10 +28,8 @@ $gallery-bg-color: rgba(242, 0, 0, .6);
         font-size: .85rem;
         transition-duration: .3s;
         cursor: pointer;
-      }
-
-      @media screen and (max-width: 768px) {
-        .gallery-filter-item {
+      
+        @media screen and (max-width: 1060px) {
           padding: 10px 20px;
           font-size: .75rem;
           margin-top: 10px;

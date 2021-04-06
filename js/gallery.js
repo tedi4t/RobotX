@@ -7,14 +7,15 @@ const galleryButtons = {
   'web-btn': 'web',
 };
 
-const itemsInRow = 5;
 const windowWidth = $(window).innerWidth();
+const itemsInRow = windowWidth > 768 ? 5 : 2;
 const galleryItems = $('#gallery #gallery-items').children();
+const itemsAmount = galleryItems.length;
 const itemWidth = windowWidth / itemsInRow;
 // const itemHeight = galleryItems.first().innerHeight();
 const itemHeight = itemWidth;
-console.log({ itemHeight });
-$('#gallery #gallery-items').css('height', `${itemHeight * 2}px`)
+const rowsNumber = Math.ceil(itemsAmount / itemsInRow)
+$('#gallery #gallery-items').css('height', `${itemHeight * rowsNumber}px`)
 
 // first location of photos
 function locateAllPhotos() {
@@ -39,7 +40,7 @@ function showAllPhotos(itemIndex) {
     'left': `${itemWidth * (itemIndex % itemsInRow)}px`,
     'transform': 'scale(1)',
   })
-  $('#gallery #gallery-items').css('height', `${itemHeight * 2}px`)
+  $('#gallery #gallery-items').css('height', `${itemHeight * rowsNumber}px`)
 }
 
 for (const btnName in galleryButtons) {
@@ -69,5 +70,3 @@ for (const btnName in galleryButtons) {
     }
   })
 }
-
-$(window).resize(locateAllPhotos);

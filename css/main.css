@@ -2096,6 +2096,16 @@ section#news #news-block #news-left .news-list .news .date .date-content {
   }
 }
 
+section#news #news-block #news-left .news-list .news .date .date-content i {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  section#news #news-block #news-left .news-list .news .date .date-content i {
+    display: block;
+  }
+}
+
 section#news #news-block #news-left .news-list .news .content {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
@@ -2194,6 +2204,16 @@ section#news #news-block #news-right .news-list .news .date .date-content {
     font-weight: 800;
     width: 100%;
     max-width: none;
+  }
+}
+
+section#news #news-block #news-right .news-list .news .date .date-content i {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  section#news #news-block #news-right .news-list .news .date .date-content i {
+    display: block;
   }
 }
 

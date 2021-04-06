@@ -68,6 +68,14 @@ section#news {
                 width: 100%;
                 max-width: none;
 							}
+
+              i {
+                display: none;
+
+                @media screen and (max-width: 992px) {
+                  display: block;
+                }
+              }
 						}
 					}
 
@@ -151,6 +159,14 @@ section#news {
                 width: 100%;
                 max-width: none;
 							}
+
+              i {
+                display: none;
+
+                @media screen and (max-width: 992px) {
+                  display: block;
+                }
+              }
 						}
 					}
 
